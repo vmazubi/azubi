@@ -5,96 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>V-Markt Azubis</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                primary: 'var(--color-primary)',
-                secondary: 'var(--color-secondary)',
-                dark: 'var(--color-dark)',
-                light: 'var(--color-light)',
-                surface: 'var(--color-surface)',
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      :root {
-        /* Default (V-Markt Green) */
-        --color-primary: #007d40;
-        --color-secondary: #f49e00;
-        --color-dark: #005c2f;
-        --color-light: #e6f2eb;
-        --color-surface: #ffffff;
-      }
-
-      /* Blue Theme */
-      .theme-blue {
-        --color-primary: #2563eb;
-        --color-secondary: #f59e0b;
-        --color-dark: #1e40af;
-        --color-light: #eff6ff;
-      }
-
-      /* Purple Theme */
-      .theme-purple {
-        --color-primary: #9333ea;
-        --color-secondary: #ec4899;
-        --color-dark: #7e22ce;
-        --color-light: #f3e8ff;
-      }
-      
-      /* Orange Theme */
-      .theme-orange {
-        --color-primary: #ea580c;
-        --color-secondary: #facc15;
-        --color-dark: #9a3412;
-        --color-light: #fff7ed;
-      }
-
-      /* Dark Mode Overrides for variables if needed */
-      .dark {
-        --color-surface: #0f172a;
-      }
-
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
-      }
-      ::-webkit-scrollbar-track {
-        background: transparent; 
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #cbd5e1; 
-        border-radius: 3px;
-      }
-      .dark ::-webkit-scrollbar-thumb {
-        background: #475569;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #94a3b8; 
-      }
-      /* Firefox */
-      * {
-        scrollbar-width: thin;
-        scrollbar-color: #cbd5e1 transparent;
-      }
-      .dark * {
-        scrollbar-color: #475569 transparent;
-      }
-    </style>
-  <script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.87.1",
@@ -109,8 +22,7 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
-</head>
+  </head>
   <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased overflow-hidden transition-colors duration-300">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>

@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default (V-Markt Green) */
+  --color-primary: #007d40;
+  --color-secondary: #f49e00;
+  --color-dark: #005c2f;
+  --color-light: #e6f2eb;
+  --color-surface: #ffffff;
+}
+
+/* Blue Theme */
+.theme-blue {
+  --color-primary: #2563eb;
+  --color-secondary: #f59e0b;
+  --color-dark: #1e40af;
+  --color-light: #eff6ff;
+}
+
+/* Purple Theme */
+.theme-purple {
+  --color-primary: #9333ea;
+  --color-secondary: #ec4899;
+  --color-dark: #7e22ce;
+  --color-light: #f3e8ff;
+}
+
+/* Orange Theme */
+.theme-orange {
+  --color-primary: #ea580c;
+  --color-secondary: #facc15;
+  --color-dark: #9a3412;
+  --color-light: #fff7ed;
+}
+
+/* Dark Mode Overrides */
+.dark {
+  --color-surface: #0f172a;
+}
+
+@layer utilities {
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.dark * {
+  scrollbar-color: #475569 transparent;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
