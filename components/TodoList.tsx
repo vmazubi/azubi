@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TodoItem, Language } from '../types';
 import { Plus, Trash2, Calendar, Briefcase, GraduationCap, User, Check, Wand2, Key } from 'lucide-react';
 import { generateTodoSuggestions } from '../services/geminiService';
-import { supabase } from '../supabaseClient'; // ⬅️ ADD THIS
+import { supabase } from "../services/supabase"; // ⬅️ ADD THIS
 
 interface TodoListProps {
   todos: TodoItem[];
